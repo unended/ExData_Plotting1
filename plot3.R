@@ -1,11 +1,16 @@
 library(sqldf)
 
 ## setwd
-wd <- "/Users/patrick/Documents/Workspace/R/ExploratoryDataAnalysis/ExData_Plotting1"
-curwd <- getwd()
-if ( wd != curwd ) {
-    setwd(wd)
-}
+#wd <- "##Path to working directory"
+#curwd <- getwd()
+#if ( wd != curwd ) {
+#    setwd(wd)
+#}
+#######################################
+
+## TXT file was too big for GitHub so I only added the ZIP. This line does some
+## initial setup to unzip the file and place it in the ./data directory before proceeding. 
+unzip("./data/household_power_consumption.txt.zip", files="household_power_consumption.txt", exdir="./data")
 
 ## read table
 cols <- c("character", "character", rep("numeric", 7))
