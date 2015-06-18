@@ -26,7 +26,7 @@ dataSample <- cbind( dataSample, dateTime )
 names(dataSample) <- colNames <- c("Date", "Time", "GlobalActivePower", "GlobalReactivePower", "Voltage", "GlobalIntensity", "SubMetering1", "SubMetering2", "SubMetering3", "DateTime")
 
 ## Create plot3.png
-png("plot3.png", width=480, heigh=480, bg="transparent")
+png("plot3.png", width=480, height=480, bg="transparent")
 plot(dataSample$DateTime, dataSample$SubMetering1, type="l", xlab="", ylab="Energy sub metering")
 lines(dataSample$DateTime, dataSample$SubMetering2, type="l", col="red")
 lines(dataSample$DateTime, dataSample$SubMetering3, type="l", col="blue")

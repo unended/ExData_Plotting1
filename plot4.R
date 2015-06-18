@@ -26,7 +26,7 @@ dataSample <- cbind( dataSample, dateTime )
 names(dataSample) <- colNames <- c("Date", "Time", "GlobalActivePower", "GlobalReactivePower", "Voltage", "GlobalIntensity", "SubMetering1", "SubMetering2", "SubMetering3", "DateTime")
 
 ## Create plot4.png
-png("plot4.png", width=480, heigh=480, bg="transparent")
+png("plot4.png", width=480, height=480, bg="transparent")
 
 par(mfrow = c(2, 2))
 

@@ -26,6 +26,6 @@ dataSample <- cbind( dataSample, dateTime )
 names(dataSample) <- colNames <- c("Date", "Time", "GlobalActivePower", "GlobalReactivePower", "Voltage", "GlobalIntensity", "SubMetering1", "SubMetering2", "SubMetering3", "DateTime")
 
 ## Create plot1.png
-png("plot1.png", width=480, heigh=480, bg="transparent")
+png("plot1.png", width=480, height=480, bg="transparent")
 hist( dataSample$GlobalActivePower, main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red" )
 dev.off()
